@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Zapatillas Onedream",
+    "description": "Zapatilla Bitonal en 3 tipos de colores.",
+    "price": 25500,
+    "image": "/img/f1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Zapatillas New Balance",
+    "description": "Zapatillas newbalance z1000 unisex blancas, con un estilo casual y deportivo.",
+    "price": 40000,
+    "image": "/img/f2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Zapatillas Puma",
+    "description": "Zapatillas blancas casuales Puma, reforzadas y con dobles costuras. ",
+    "price": 38900,
+    "image": "/img/f3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Zapatilla Lancaster",
+    "description": "Zapatillas Blancas, con un estilo casual y deportivo para todo tipo de ocaciones.",
+    "price": 35000,
+    "image": "/img/f4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Zapatillas MNG",
+    "description": "Zapatilla de hombre MNG blancas, reforzadas con un estilo versatil y comodas",
+    "price": 52000,
+    "image": "/img/f5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Zapatillas Old travis",
+    "description": "Zapatillas para dama vintage multiculor, reforzada con doble costura",
+    "price": 15500,
+    "image": "/img/f6.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Zapatillas Yeezy",
+    "description": "Zapatillas unisex Yezzy, estilo imnovador y moderno",
+    "price": 47000,
+    "image": "/img/f7.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Zapatillas Altheon",
+    "description": "Zapatillas blancas, casuales reforzadas.",
+    "price": 45500,
+    "image": "/img/f8.jpg"
+  }
+]

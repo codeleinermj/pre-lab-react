@@ -1,0 +1,103 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background: #0a0a15;
+  border-bottom: 2px solid rgba(0, 212, 255, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  will-change: transform, color;
+  position: relative;
+}
+
+.logo-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.logo-container:hover {
+  color: #00d4ff;
+  transform: scale(1.05);
+}
+
+.logo-container:hover a {
+  color: #00d4ff;
+}
+
+.logo-container::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #00d4ff, #0099ff);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.logo-container:hover::after {
+  width: 100%;
+}
+
+.logo-container img {
+  width: 45px;
+  height: 45px;
+  transition: filter 0.3s ease;
+  flex-shrink: 0;
+}
+
+.logo-container:hover img {
+  filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.6));
+}
+
+.logo-container span {
+  letter-spacing: 0.05em;
+  font-size: 1.6rem;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  will-change: transform;
+}
+
+.logo-container:hover span {
+  animation: stretching 0.9s ease-in-out forwards;
+}
+
+@keyframes stretching {
+  0% {
+    transform: scaleX(1) scaleY(1);
+    letter-spacing: 0.05em;
+  }
+  25% {
+    transform: scaleX(1.08) scaleY(0.98);
+    letter-spacing: 0.08em;
+  }
+  50% {
+    transform: scaleX(1) scaleY(1.12);
+    letter-spacing: 0.1em;
+  }
+  75% {
+    transform: scaleX(1.06) scaleY(0.96);
+    letter-spacing: 0.07em;
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
+    letter-spacing: 0.05em;
+  }
+}

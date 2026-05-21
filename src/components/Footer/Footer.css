@@ -1,0 +1,75 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background: #0a0a15;
+  border-top: 2px solid rgba(0, 212, 255, 0.2);
+  margin-top: 3rem;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.4);
+  color: #b3b3b3;
+  font-size: 0.9rem;
+}
+
+footer p {
+  color: #eaeaea;
+  font-weight: 700;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #00d4ff, #0099ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  cursor: default;
+  transition: all 0.3s ease;
+  will-change: transform;
+  letter-spacing: 0.05em;
+}
+
+footer p:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+footer nav .nav-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+footer nav .nav-list li {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+footer a {
+  color: #eaeaea;
+  text-decoration: none;
+  position: relative;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  will-change: color, transform;
+}
+
+footer a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #00d4ff, #0099ff);
+  transition: width 0.3s ease;
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.4);
+}
+
+footer a:hover {
+  color: #00d4ff;
+  transform: translateY(-3px);
+}
+
+footer a:hover::before {
+  width: 100%;
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.6);
+}
